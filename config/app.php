@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/laravel'),
+    'url' => env('APP_URL', 'https://researchhub-anjanababu.c9users.io'),
 
     /*
     |--------------------------------------------------------------------------

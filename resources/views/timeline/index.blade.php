@@ -81,7 +81,7 @@
 	    			@if( $status->type == 0 )
 				        <div class="media">
 						    <a class="pull-left" href="#">
-						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:80px; width:80px;">
+						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:70px; width:70px;">
 						    </a>
 						   	<div class="media-body">
 						        <h4 class="media-heading"><a href="">{{ $status->user->fullname() }}</a></h4>
@@ -104,7 +104,7 @@
 					@elseif( $status->type == 1 )
 				        <div class="media">
 						    <a class="pull-left" href="#">
-						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:80px; width:80px;">
+						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:70px; width:70px;">
 						    </a>
 						   	<div class="media-body">
 						        <h4 class="media-heading"><a href="">{{ $status->name }}</a></h4>
@@ -129,7 +129,7 @@
 					@elseif( $status->type == 2 )
 				        <div class="media">
 						    <a class="pull-left" href="#">
-						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:80px; width:80px;">
+						        <img class="media-object" alt="{{ $status->user->fullname() }}" src="{{ $status->user->profilephoto==null?URL::to('/').'/img/default_profile_photo.jpg':$status->user->profilephoto }}" style="height:70px; width:70px;">
 						    </a>
 						   	<div class="media-body">
 						        <!--<h4 class="media-heading"><a href="">{{ $status->name }}</a></h4>-->

@@ -17,4 +17,6 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    
+    RewriteRule ^:80/(.*)$ /$1 [R=301,L]
 </IfModule>

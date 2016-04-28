@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>Results</h1>
-	<h3>Your search for "{{Request::input('query')}}"</h3>
+	<h4>Your search for "{{Request::input('query')}}"</h4>
 
 	@if (!$users->count())
 		<p>No results found!!!</p>

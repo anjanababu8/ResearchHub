@@ -22,11 +22,11 @@ class SearchController extends Controller {
 		$id = $user->id;
 		$query = Input::get('query');
 
-		if(!$query) {
-			return Redirect::route('home');
-		}
+		/*if(!$query) {   //Not working
+			return Redirect::route('/home');
+		}*/
 
-		$users = User::where('firstname','LIKE','%'.$query.'%', 'AND', 'id', ' != '.$id)->get(['id', 'firstname', 'lastname']);
+		$users = User::where('firstname','LIKE','%'.$query.'%', 'AND', 'id', ' != '.$id)->get(['id', 'firstname', 'lastname','profilephoto']);
 		$total_count = $users->count();
 
 

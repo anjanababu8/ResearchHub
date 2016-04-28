@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', array(
+Route::get('/home', array(
 	'uses' => 'UserController@index',
 	'as' => 'home',
 ));
