@@ -1,0 +1,7 @@
+[2016-04-21 19:44:10] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'Command "php" is not defined.' in /home/server/htdocs/laravel/vendor/symfony/console/Application.php:512
+Stack trace:
+#0 /home/server/htdocs/laravel/vendor/symfony/console/Application.php(183): Symfony\Component\Console\Application->find('php')
+#1 /home/server/htdocs/laravel/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/server/htdocs/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/server/htdocs/laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
